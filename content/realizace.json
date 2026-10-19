@@ -1,0 +1,205 @@
+{
+  "_info": "Realizace pro detailní stránky. Pořadí = pořadí na webu. 'src' je cesta v Desktop\\bakalarka\\materaily_monografie (jen pro tools/resize-realizace.ps1). Po úpravě: 1) powershell -File tools\\resize-realizace.ps1  2) node scripts/build-realizace.js",
+  "projects": [
+    {
+      "slug": "cafe-bulldog",
+      "title": "Cafe Bulldog",
+      "place": "Břeclav",
+      "year": "2011–2014",
+      "type": "Fasáda a interiér kavárny",
+      "category": "Kavárny a restaurace",
+      "scope": "Fasáda, interiér, nábytek, svítidla, vitráže",
+      "collab": "Vitráže: Miroslav Mráz, Pavel Doležal",
+      "status": "Realizováno",
+      "lead": "Kavárna v Břeclavi, která dostala novou fasádu i celý interiér. Tmavé dřevo, zelené obložení, kované prvky a barevné vitráže.",
+      "body": [
+        "Z obyčejné přízemní budovy se stala kavárna s výraznou tváří do ulice – zelená dřevěná fasáda s výlohami, oblouk s vitráží a kované konzoly lamp.",
+        "Interiér je navržený do detailu: barový pult, kazetové stropy, čalouněné boxy, dveře s vitrážemi i lampy. Většina prvků vznikala na míru v truhlářské dílně.",
+        "Vitráže vznikly ve spolupráci s výtvarníky Miroslavem Mrázem a Pavlem Doležalem – v moderním stylu inspirovaném přírodou a organickými tvary."
+      ],
+      "hero": { "file": "hero.jpg", "src": "jednotlive slozky projektu/irish pub_jan baranek/DSC_0339.JPG", "alt": "Cafe Bulldog – zelená dřevěná fasáda s obloukem a terasou" },
+      "gallery": [
+        { "file": "01.jpg", "src": "jednotlive slozky projektu/irish pub_jan baranek/DSC_0316.JPG", "alt": "Interiér kavárny s okny do ulice a barovými židlemi", "size": "wide" },
+        { "file": "02.jpg", "src": "jednotlive slozky projektu/irish pub_jan baranek/IMG_1173.JPG", "alt": "Dřevěné dveře s barevnou vitráží", "size": "tall" },
+        { "file": "03.jpg", "src": "jednotlive slozky projektu/irish pub_jan baranek/IMG_1149.JPG", "alt": "Barový pult z tmavého dřeva" },
+        { "file": "04.jpg", "src": "jednotlive slozky projektu/irish pub_jan baranek/DSC_0318.JPG", "alt": "Červená vitráž s organickým motivem v okně" },
+        { "file": "05.jpg", "src": "jednotlive slozky projektu/irish pub_jan baranek/IMG_1159.JPG", "alt": "Čalouněný box se stolem a zelenou lampou", "size": "wide" },
+        { "file": "06.jpg", "src": "jednotlive slozky projektu/irish pub_jan baranek/IMG_1171.JPG", "alt": "Lucerna nad barem", "size": "tall" },
+        { "file": "07.jpg", "src": "jednotlive slozky projektu/irish pub_jan baranek/IMG_0995.JPG", "alt": "Kovaná konzola lampy na fasádě" },
+        { "file": "08.jpg", "src": "jednotlive slozky projektu/irish pub_jan baranek/IMG_1264.JPG", "alt": "Kazetový strop a závěsné svítidlo nad barem" }
+      ],
+      "compare": {
+        "title": "Před a po",
+        "text": "Stejná budova před přestavbou a po ní. Fasáda je celá ze dřeva, vyrobená a osazená na míru.",
+        "before": { "file": "pred.jpg", "src": "jednotlive slozky projektu/irish pub_jan baranek/IMG_0790.JPG", "alt": "Budova před přestavbou" },
+        "after": { "file": "po.jpg", "src": "jednotlive slozky projektu/irish pub_jan baranek/IMG_1250.JPG", "alt": "Kavárna po přestavbě" },
+        "labels": ["Před", "Po"]
+      },
+      "sketches": {
+        "title": "Výkresy, model a dílna",
+        "text": "Fasáda nejdřív vznikla na výkresech a v pracovním modelu, teprve pak v dílně.",
+        "items": [
+          { "file": "s1.jpg", "src": "jednotlive slozky projektu/irish pub_jan baranek/DSC_0484.JPG", "alt": "Výkres pohledu na fasádu", "caption": "Pohled na fasádu" },
+          { "file": "s2.jpg", "src": "model irish pub/jpg/_DSC0116.JPG", "alt": "Pracovní model kavárny", "caption": "Pracovní model" },
+          { "file": "s3.jpg", "src": "jednotlive slozky projektu/irish pub_jan baranek/vitraze.JPG", "alt": "Návrhy vitráží", "caption": "Návrhy vitráží" },
+          { "file": "s4.jpg", "src": "jednotlive slozky projektu/irish pub_jan baranek/IMG_1006.JPG", "alt": "Výroba prvků fasády v truhlářské dílně", "caption": "Výroba v dílně" }
+        ]
+      }
+    },
+    {
+      "slug": "vinarna-u-kovariku",
+      "title": "Vinárna U Kovaříků",
+      "place": "Mikulov, Hotel Bonsai",
+      "year": "2014",
+      "type": "Interiér vinárny",
+      "category": "Vinárny",
+      "scope": "Interiér, obslužný pult, vitríny, osvětlení",
+      "collab": "",
+      "status": "Realizováno",
+      "lead": "Interiér vinárny pod cihelnou klenbou Hotelu Bonsai v Mikulově – osvětlený pult z dřeva, železa a skla a vitríny navržené na míru.",
+      "body": [
+        "Kamenná dlažba, cihelné zdi a klenba určily charakter prostoru. Do něj vstoupil osvětlený obslužný pult, který kombinuje dřevo, železo a sklo.",
+        "Vitríny na víno a sklo jsou navržené na míru konkrétním stěnám – od ruční skici až po realizaci."
+      ],
+      "hero": { "file": "hero.jpg", "src": "jednotlive slozky projektu/vinarna hotel bonsai/IMG_1373.JPG", "alt": "Osvětlený barový pult vinárny pod cihelnou klenbou" },
+      "gallery": [
+        { "file": "01.jpg", "src": "jednotlive slozky projektu/vinarna hotel bonsai/IMG_1360.JPG", "alt": "Barový pult a kamenná dlažba", "size": "wide" },
+        { "file": "02.jpg", "src": "jednotlive slozky projektu/vinarna hotel bonsai/IMG_1369.JPG", "alt": "Dřevěná vitrína na víno", "size": "tall" },
+        { "file": "03.jpg", "src": "jednotlive slozky projektu/vinarna hotel bonsai/IMG_1361.JPG", "alt": "Skříň s lahvemi vína v cihelné niké" },
+        { "file": "04.jpg", "src": "jednotlive slozky projektu/vinarna hotel bonsai/IMG_1364.JPG", "alt": "Kovový věšák na sklenice", "size": "tall" },
+        { "file": "05.jpg", "src": "jednotlive slozky projektu/vinarna hotel bonsai/IMG_1365.JPG", "alt": "Posezení s křesly u stěny z cihel" },
+        { "file": "06.jpg", "src": "jednotlive slozky projektu/vinarna hotel bonsai/IMG_1362.JPG", "alt": "Pult se zeleně podsvíceným sklem", "size": "wide" }
+      ],
+      "compare": {
+        "title": "Od skici k realizaci",
+        "text": "Vitrína nejdřív vznikla tužkou na papíře – a pak ve stejných proporcích ve vinárně.",
+        "before": { "file": "skica.jpg", "src": "jednotlive slozky projektu/vinarna hotel bonsai/DSC_0814 copy.jpg", "alt": "Ruční výkres vitríny" },
+        "after": { "file": "vitrina.jpg", "src": "jednotlive slozky projektu/vinarna hotel bonsai/IMG_1369.JPG", "alt": "Realizovaná vitrína" },
+        "labels": ["Skica", "Realizace"],
+        "drawing": true
+      },
+      "sketches": {
+        "title": "Kompozice z monografie",
+        "text": "Výkresy, skici a fotografie projektu tak, jak jsou nafocené v monografii.",
+        "items": [
+          { "file": "s1.jpg", "src": "fota/kompozice/in_komp_02/opravene/2014, interier vinarny u kovaříků, Hotel Bonsai, Mikulov.JPG", "alt": "Kompozice výkresů a fotografií vinárny", "caption": "Kompozice I" },
+          { "file": "s2.jpg", "src": "fota/kompozice/in_komp_02/opravene/2014, interier vinarny u kovaříků, Hotel Bonsai, Mikulov_02.jpg", "alt": "Kompozice výkresů vinárny", "caption": "Kompozice II" }
+        ]
+      }
+    },
+    {
+      "slug": "vila-elux",
+      "title": "Vila Elux",
+      "place": "Břeclav",
+      "year": "2008",
+      "type": "Přestavba",
+      "category": "Rekonstrukce",
+      "scope": "Fasáda, okna, plot, kovaná brána",
+      "collab": "Barevnost: Jaroslava Garšicová",
+      "status": "Realizováno",
+      "lead": "Přestavba administrativní budovy břeclavského pivovaru – nová podoba fasády, oken, plotu a kované brány.",
+      "body": [
+        "Vila Elux je administrativní budova břeclavského pivovaru. Při její přestavbě vznikala nová podoba fasády, oken, plotu a brány – postupně, v desítkách skic kreslených naproti rozestavěné budově.",
+        "Barevnost fasády vznikala ve spolupráci s malířkou Jaroslavou Garšicovou. V přízemí vily nechal investor zřídit výstavní prostory se závěsným systémem; první výstava proběhla už při otevření budovy."
+      ],
+      "hero": { "file": "hero.jpg", "src": "jednotlive slozky projektu/vila elux/DSC_0354.JPG", "alt": "Vila Elux – žlutá fasáda se štítem, nová brána a plot" },
+      "gallery": [
+        { "file": "01.jpg", "src": "jednotlive slozky projektu/vila elux/DSC_0369.JPG", "alt": "Průčelí vily s komínem pivovaru v pozadí", "size": "wide" },
+        { "file": "02.jpg", "src": "jednotlive slozky projektu/vila elux/DSC_0370.JPG", "alt": "Detail štítu s hodinami" },
+        { "file": "03.jpg", "src": "jednotlive slozky projektu/vila elux/DSC_0373.JPG", "alt": "Vstupní dveře v kamenném portálu", "size": "tall" },
+        { "file": "04.jpg", "src": "jednotlive slozky projektu/vila elux/DSC_0367.JPG", "alt": "Detail kované brány se spirálovým ornamentem" },
+        { "file": "05.jpg", "src": "jednotlive slozky projektu/vila elux/DSC_0371.JPG", "alt": "Kovaná brána a cihlový plot", "size": "wide" },
+        { "file": "06.jpg", "src": "jednotlive slozky projektu/vila elux/IMG_0893.JPG", "alt": "Vila Elux v podvečer" }
+      ],
+      "compare": {
+        "title": "Od skici k realizaci",
+        "text": "Ruční pohled na vilu s plotem a branou – a stejné průčelí po přestavbě.",
+        "before": { "file": "skica.jpg", "src": "jednotlive slozky projektu/vila elux/_DSC0026.jpg", "alt": "Ruční skica průčelí vily s plotem" },
+        "after": { "file": "foto.jpg", "src": "jednotlive slozky projektu/vila elux/DSC_0354.JPG", "alt": "Průčelí vily po přestavbě" },
+        "labels": ["Skica", "Realizace"],
+        "drawing": true
+      },
+      "sketches": {
+        "title": "Desítky variant brány",
+        "text": "Brána a plot prošly desítkami skic na pauzovacím papíru – od celkového tvaru po ornament a konstrukci.",
+        "items": [
+          { "file": "s1.jpg", "src": "jednotlive slozky projektu/vila elux/_DSC0020.jpg", "alt": "Skica brány s ornamentem", "caption": "Brána – varianta" },
+          { "file": "s2.jpg", "src": "jednotlive slozky projektu/vila elux/_DSC0046.jpg", "alt": "Skica brány s organickým ornamentem", "caption": "Brána – ornament" },
+          { "file": "s3.jpg", "src": "jednotlive slozky projektu/vila elux/_DSC0053.jpg", "alt": "Tři varianty brány vedle sebe", "caption": "Porovnání variant" },
+          { "file": "s4.jpg", "src": "jednotlive slozky projektu/vila elux/_DSC0050.jpg", "alt": "Kolorovaný pohled na plot a bránu", "caption": "Plot a brána" }
+        ]
+      }
+    },
+    {
+      "slug": "rodinny-dum-valtice",
+      "title": "Rodinná vila",
+      "place": "Valtice",
+      "year": "2000",
+      "type": "Novostavba rodinného domu",
+      "category": "Rodinné domy",
+      "scope": "Architektonický návrh domu, interiér, zahrada",
+      "collab": "Ing. arch. Štěpán Děnge",
+      "status": "Realizováno",
+      "lead": "Rodinná vila na svažitém pozemku ve Valticích. Cihelný sokl, široké přesahy střech a obytné místnosti otevřené do zahrady.",
+      "body": [
+        "Dům sleduje svažitý pozemek – cihelné opěrné zdi a schodiště vedou od ulice k hlavnímu vstupu, obytné místnosti se otevírají do zahrady.",
+        "Široké přesahy střech stíní terasy i okna. Obývací pokoj s krbem má přes celou šířku prosklenou stěnu do zahrady s jezírkem a bazénem.",
+        "Projekt vznikl ve spolupráci s Ing. arch. Štěpánem Děngem."
+      ],
+      "hero": { "file": "hero.jpg", "src": "jednotlive slozky projektu/rodinny dum humlicek/DSC_0915.JPG", "alt": "Rodinná vila ve Valticích osazená do svahu" },
+      "gallery": [
+        { "file": "01.jpg", "src": "jednotlive slozky projektu/rodinny dum humlicek/DSC_0919.JPG", "alt": "Zahradní průčelí vily s trávníkem", "size": "wide" },
+        { "file": "02.jpg", "src": "jednotlive slozky projektu/rodinny dum humlicek/DSC_0916.JPG", "alt": "Cihelné schodiště ke vstupu", "size": "tall" },
+        { "file": "03.jpg", "src": "jednotlive slozky projektu/rodinny dum humlicek/DSC_0926.JPG", "alt": "Krytá terasa s výhledem do krajiny" },
+        { "file": "04.jpg", "src": "jednotlive slozky projektu/rodinny dum humlicek/IMG_1458.JPG", "alt": "Obývací pokoj s krbem" },
+        { "file": "05.jpg", "src": "jednotlive slozky projektu/rodinny dum humlicek/DSC_0940.JPG", "alt": "Obývací pokoj s prosklenou stěnou do zahrady", "size": "wide" },
+        { "file": "06.jpg", "src": "jednotlive slozky projektu/rodinny dum humlicek/IMG_1462.JPG", "alt": "Kuchyně s ostrůvkem" },
+        { "file": "07.jpg", "src": "jednotlive slozky projektu/rodinny dum humlicek/DSC_0948.JPG", "alt": "Pohled na zahradu s bazénem", "size": "tall" },
+        { "file": "08.jpg", "src": "jednotlive slozky projektu/rodinny dum humlicek/DSC_0952.JPG", "alt": "Prosklená střecha nad zimní zahradou" }
+      ],
+      "sketches": {
+        "title": "Studie domu",
+        "text": "Kolorovaná perspektiva a listy studie – tak dům vypadal dřív, než se začalo stavět.",
+        "items": [
+          { "file": "s1.jpg", "src": "jednotlive slozky projektu/rodinny dum humlicek/DSC_0450.JPG", "alt": "Kolorovaná ruční perspektiva domu", "caption": "Ruční perspektiva" },
+          { "file": "s2.jpg", "src": "fota/kompozice/in_komp_02/opravene/2000, valtice humlicek 01.jpg", "alt": "Listy studie domu – půdorysy a pohledy", "caption": "Studie – půdorysy" },
+          { "file": "s3.jpg", "src": "fota/kompozice/in_komp_02/opravene/2000, valtice humlicek 02.jpg", "alt": "Listy studie domu – pohledy a perspektivy", "caption": "Studie – pohledy" }
+        ]
+      }
+    },
+    {
+      "slug": "zamecky-sal-mikulov",
+      "title": "Zámecký sál",
+      "place": "Zámek Mikulov",
+      "year": "1998–1999",
+      "type": "Rekonstrukce a adaptace interiéru",
+      "category": "Rekonstrukce",
+      "scope": "Interiér sálu a vstupních prostor, kované brány",
+      "collab": "Ing. arch. Štěpán Děnge",
+      "status": "Realizováno",
+      "lead": "Rekonstrukce a adaptace velkého sálu mikulovského zámku – interiér sálu a vstupních prostor včetně kovaných zámeckých bran.",
+      "body": [
+        "Velký zámecký sál v Mikulově dostal na konci 90. let novou podobu. Návrh řešil interiér sálu i vstupních prostor – od zábradlí schodiště a osvětlení po nábytek.",
+        "Součástí zakázky byly i kované zámecké brány. Projekt vznikl ve spolupráci s Ing. arch. Štěpánem Děngem."
+      ],
+      "hero": { "file": "hero.jpg", "src": "web_podklady/zamecky-sal-a-vinarna-490.jpg", "alt": "Velký zámecký sál v Mikulově se schodištěm na pódium" },
+      "gallery": [
+        { "file": "01.jpg", "src": "web_podklady/05_velky_zamecky_sal.jpg", "alt": "Zámecký sál se stoly a lustry", "size": "wide" },
+        { "file": "02.jpg", "src": "jednotlive slozky projektu/spoluprace denge/zamek miikulov/2.jpg", "alt": "Schodiště s kovaným zábradlím", "size": "tall" },
+        { "file": "03.jpg", "src": "jednotlive slozky projektu/spoluprace denge/zamek miikulov/10.JPG", "alt": "Kamenný portál vstupu" },
+        { "file": "04.jpg", "src": "jednotlive slozky projektu/spoluprace denge/zamek miikulov/3.jpg", "alt": "Lustr ve stropu sálu" },
+        { "file": "05.jpg", "src": "jednotlive slozky projektu/spoluprace denge/zamek miikulov/4.jpg", "alt": "Detail kovaného zábradlí" },
+        { "file": "06.jpg", "src": "jednotlive slozky projektu/spoluprace denge/zamek miikulov/7.JPG", "alt": "Řada židlí navržených pro sál", "size": "wide" }
+      ],
+      "sketches": {
+        "title": "Práce na výkresech",
+        "text": "Velkoformátové výkresy sálu a kompozice z monografie.",
+        "items": [
+          { "file": "s1.jpg", "src": "jednotlive slozky projektu/spoluprace denge/zamek miikulov/_DSC1202.jpg", "alt": "Oldřich Hutter u velkého výkresu sálu", "caption": "U výkresu sálu" },
+          { "file": "s2.jpg", "src": "fota/kompozice/in_komp_02/opravene/1998, Zamecky sal, Mikulov, 01.JPG", "alt": "Kompozice výkresů a fotografií sálu", "caption": "Kompozice I" },
+          { "file": "s3.jpg", "src": "fota/kompozice/in_komp_02/opravene/1998, Zamecky sal, Mikulov, 03.JPG", "alt": "Kompozice výkresů sálu", "caption": "Kompozice II" }
+        ]
+      }
+    }
+  ]
+}

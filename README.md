@@ -16,6 +16,17 @@ node dev.js        → http://localhost:5198
 - `js/main.js` – Lenis + GSAP ScrollTrigger, intro s logem, galerie, posuvník, formulář
 - `img/` – zmenšené fotky; vznikají skriptem `tools/resize.ps1` z `Desktop\bakalarka`
 
+## Detaily realizací
+
+Stránky `realizace/*.html` se negenerují ručně, ale z `content/realizace.json`
+(texty, razítko, galerie, porovnání skica/foto nebo před/po, výkresy).
+
+Nová realizace:
+1. přidat projekt do `content/realizace.json` (pořadí = pořadí na webu, nejnovější nahoru)
+2. `powershell -ExecutionPolicy Bypass -File tools\resize-realizace.ps1` – zmenší fotky do `img/realizace/<slug>/`
+3. `node scripts/build-realizace.js` – vygeneruje seznam i detaily
+4. odkaz z úvodu (`index.html`) přidat ručně, pokud má být mezi vybranými
+
 ## Co je potřeba doplnit (v prototypu oranžově)
 
 - e-mail, telefon, doména
