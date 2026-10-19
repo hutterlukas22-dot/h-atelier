@@ -58,24 +58,60 @@
 <main id="obsah">
 
   <!-- 00 HERO -->
-  <section class="hero" aria-labelledby="hero-title">
+  <section class="hero" aria-labelledby="hero-title" aria-roledescription="carousel" data-hero>
     <div class="hero__media" data-hero-media>
-      <img src="img/hero-dum-valtice.jpg" alt="Rodinný dům ve Valticích – terasovitě osazený do svahu, cihelný sokl a široké přesahy střechy" width="2400" height="1600" fetchpriority="high">
+      <figure class="hero-slide is-active" data-slide>
+        <img src="img/hero-dum-valtice.jpg" alt="Rodinný dům ve Valticích – terasovitě osazený do svahu, cihelný sokl a široké přesahy střechy" width="2400" height="1600" fetchpriority="high">
+      </figure>
+      <figure class="hero-slide" data-slide>
+        <img src="img/hero-vinarna.jpg" alt="Vinárna U Kovaříků – osvětlený pult z dřeva, železa a skla pod cihelnou klenbou" width="2400" height="1800" decoding="async">
+      </figure>
+      <figure class="hero-slide" data-slide>
+        <img src="img/hero-elux.jpg" alt="Vila Elux v Břeclavi – žlutá fasáda se štítem, nová brána a oplocení" width="2400" height="1600" loading="lazy" decoding="async">
+      </figure>
+      <figure class="hero-slide" data-slide>
+        <img src="img/hero-bulldog.jpg" alt="Cafe Bulldog v Břeclavi – zelená fasáda s obloukem a terasou" width="2400" height="1600" loading="lazy" decoding="async">
+      </figure>
     </div>
+
     <div class="wrap hero__content">
       <div class="grid">
-        <p class="eyebrow" style="grid-column:1/-1" data-hero-in><b>H&nbsp;atelier</b><span>— Ing. arch. Oldřich Hutter, Břeclav</span></p>
-        <h1 class="display hero__title" id="hero-title" data-split>
-          <span class="line"><span>Domy, které</span></span>
-          <span class="line"><span>vycházejí <strong>z místa.</strong></span></span>
-        </h1>
-        <div class="hero__bottom">
-          <p class="lead hero__lead" data-hero-in>Architektonické studie rodinných domů, rekonstrukcí a&nbsp;interiérů. Kreslené ručně, domyšlené do detailu, s&nbsp;respektem k&nbsp;místu i&nbsp;rozpočtu.</p>
-          <div class="hero__actions" data-hero-in>
-            <a class="btn btn--light" href="studie-domu.html#poptavka">Objednat studii domu <span class="arrow" aria-hidden="true">→</span></a>
-            <a class="btn btn--ghost" href="#tvorba">Prohlédnout tvorbu</a>
+        <h1 class="visually-hidden" id="hero-title">H atelier – Ing. arch. Oldřich Hutter: studie rodinných domů, interiéry a rekonstrukce</h1>
+
+        <div class="hero__copies" data-hero-copies>
+          <div class="hero-copy is-active" data-copy>
+            <p class="eyebrow hero-copy__fade"><b>Rodinný dům</b><span>— Valtice · 2000</span></p>
+            <p class="display hero-copy__title" data-split><span class="line"><span style="--i:0">Domy, které</span></span><span class="line"><span style="--i:1">vycházejí <strong>z místa.</strong></span></span></p>
+            <p class="lead hero-copy__fade hero-copy__lead">Studie a&nbsp;návrhy rodinných domů na míru rodině, pozemku i&nbsp;rozpočtu. Kreslené ručně, domyšlené do detailu.</p>
           </div>
-          <p class="hero__caption mono" data-hero-in><span>Na snímku</span><b>Rodinný dům, Valtice</b></p>
+          <div class="hero-copy" data-copy aria-hidden="true">
+            <p class="eyebrow hero-copy__fade"><b>Vinárna U&nbsp;Kovaříků</b><span>— Mikulov · 2014</span></p>
+            <p class="display hero-copy__title"><span class="line"><span style="--i:0">Interiéry, kde</span></span><span class="line"><span style="--i:1">se <strong>zastavíte.</strong></span></span></p>
+            <p class="lead hero-copy__fade hero-copy__lead">Vinárny, kavárny a&nbsp;restaurace – od dispozice po pult, vitríny a&nbsp;světlo navržené na míru prostoru.</p>
+          </div>
+          <div class="hero-copy" data-copy aria-hidden="true">
+            <p class="eyebrow hero-copy__fade"><b>Vila Elux</b><span>— Břeclav · 2008</span></p>
+            <p class="display hero-copy__title"><span class="line"><span style="--i:0">Nový život</span></span><span class="line"><span style="--i:1"><strong>starých domů.</strong></span></span></p>
+            <p class="lead hero-copy__fade hero-copy__lead">Přestavby a&nbsp;rekonstrukce s&nbsp;citem pro charakter budovy – fasáda, okna, brána i&nbsp;plot jako jeden celek.</p>
+          </div>
+          <div class="hero-copy" data-copy aria-hidden="true">
+            <p class="eyebrow hero-copy__fade"><b>Cafe Bulldog</b><span>— Břeclav · 2011–2014</span></p>
+            <p class="display hero-copy__title"><span class="line"><span style="--i:0">Řemeslo</span></span><span class="line"><span style="--i:1">v&nbsp;<strong>každém detailu.</strong></span></span></p>
+            <p class="lead hero-copy__fade hero-copy__lead">Fasáda i&nbsp;interiér kavárny: tmavé dřevo, kované prvky a&nbsp;vitráže ve spolupráci s&nbsp;místními výtvarníky.</p>
+          </div>
+        </div>
+
+        <div class="hero__bottom">
+          <div class="hero__actions" data-hero-in>
+            <a class="btn btn--light" href="studie-domu.html#poptavka">Objednat studii <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost" href="#realizace">Realizace</a>
+          </div>
+          <div class="hero__nav" role="group" aria-label="Vybrané realizace" data-hero-in>
+            <button class="hero__dot" type="button" aria-current="true" data-goto="0"><span class="hero__bar"><i></i></span><span class="mono">01</span><span class="hero__dot-label">Rodinné domy</span></button>
+            <button class="hero__dot" type="button" data-goto="1"><span class="hero__bar"><i></i></span><span class="mono">02</span><span class="hero__dot-label">Vinárny</span></button>
+            <button class="hero__dot" type="button" data-goto="2"><span class="hero__bar"><i></i></span><span class="mono">03</span><span class="hero__dot-label">Rekonstrukce</span></button>
+            <button class="hero__dot" type="button" data-goto="3"><span class="hero__bar"><i></i></span><span class="mono">04</span><span class="hero__dot-label">Kavárny</span></button>
+          </div>
         </div>
       </div>
     </div>

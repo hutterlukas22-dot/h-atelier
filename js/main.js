@@ -77,14 +77,85 @@
   const intro = $('.intro');
   function heroIn() {
     if (!hasGsap || reduced || !hero) return;
-    const tl = gsap.timeline({ defaults: { ease: 'expo.out' } });
-    tl.from('[data-hero-media] img', { scale: 1.14, duration: 2.2 }, 0)
-      .from('[data-split] .line > span', { yPercent: 110, duration: 1.3, stagger: 0.09 }, 0.15)
-      .from('[data-hero-in]', { opacity: 0, y: 18, duration: 1, stagger: 0.08 }, 0.55);
-    gsap.to('[data-hero-media] img', {
+    // clearProps: po vstupu přebírá řízení CSS slideshow (třídy is-active/is-leaving)
+    // CSS přechody hera by se s GSAP praly o transform – během vstupu jsou vypnuté
+    hero.classList.add('no-anim');
+    const tl = gsap.timeline({
+      defaults: { ease: 'expo.out' },
+      onComplete: () => { hero.classList.remove('no-anim'); startShow(); },
+    });
+    tl.from('[data-hero-media]', { scale: 1.14, duration: 2.2, clearProps: 'scale' }, 0)
+      .from('.hero-copy.is-active .line > span', { yPercent: 110, duration: 1.3, stagger: 0.09, clearProps: 'transform' }, 0.15)
+      .from('.hero-copy.is-active .hero-copy__fade, [data-hero-in]', { opacity: 0, y: 18, duration: 1, stagger: 0.08, clearProps: 'opacity,transform' }, 0.45);
+    gsap.to('[data-hero-media]', {
       yPercent: 12, ease: 'none',
       scrollTrigger: { trigger: hero, start: 'top top', end: 'bottom top', scrub: true },
     });
+  }
+
+  /* ---------- Slideshow realizací v hero ---------- */
+  const slides = $$('[data-slide]');
+  const copies = $$('[data-copy]');
+  const dots = $$('[data-goto]');
+  let cur = 0;
+
+  function go(n) {
+    if (!hero || n === cur) return;
+    const prev = cur;
+    cur = n;
+    // příchozí snímek začíná vždy schovaný vpravo, aby se odkryl stíračkou
+    slides[n].classList.remove('is-prev');
+    void slides[n].offsetWidth;
+    slides.forEach((s, k) => {
+      s.classList.toggle('is-prev', k === prev);
+      s.classList.toggle('is-active', k === n);
+    });
+    const leaving = copies[prev];
+    leaving.classList.remove('is-active');
+    leaving.classList.add('is-leaving');
+    leaving.setAttribute('aria-hidden', 'true');
+    setTimeout(() => leaving.classList.remove('is-leaving'), 700);
+    copies[n].classList.remove('is-leaving');
+    void copies[n].offsetWidth;
+    copies[n].classList.add('is-active');
+    copies[n].removeAttribute('aria-hidden');
+    dots.forEach((d, k) => (k === n ? d.setAttribute('aria-current', 'true') : d.removeAttribute('aria-current')));
+  }
+
+  function startShow() {
+    if (!hero || reduced || slides.length < 2) return;
+    slides.forEach((s) => { const img = s.querySelector('img'); if (img) img.loading = 'eager'; });
+    hero.classList.add('is-playing');
+  }
+
+  if (hero && slides.length > 1) {
+    // konec ukazatele času = další snímek
+    hero.addEventListener('animationend', (e) => {
+      if (e.animationName === 'hero-bar') go((cur + 1) % slides.length);
+    });
+    dots.forEach((d, k) => {
+      d.addEventListener('click', () => {
+        $('[data-hero-copies]').setAttribute('aria-live', 'polite');
+        go(k);
+      });
+      d.addEventListener('keydown', (e) => {
+        const dir = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (!dir) return;
+        const n = (k + dir + dots.length) % dots.length;
+        dots[n].focus();
+        dots[n].click();
+      });
+    });
+    // pauza při práci s ovládáním a když hero není vidět
+    const nav = $('.hero__nav');
+    const pause = (on) => hero.classList.toggle('is-paused', on);
+    let hover = false, focus = false, hidden = false;
+    const sync = () => pause(hover || focus || hidden);
+    nav.addEventListener('mouseenter', () => { hover = true; sync(); });
+    nav.addEventListener('mouseleave', () => { hover = false; sync(); });
+    hero.addEventListener('focusin', () => { focus = true; sync(); });
+    hero.addEventListener('focusout', () => { focus = false; sync(); });
+    new IntersectionObserver(([en]) => { hidden = !en.isIntersecting; sync(); }, { threshold: 0.15 }).observe(hero);
   }
 
   let seen = false;
@@ -107,7 +178,7 @@
       .add(heroIn, '-=0.65');
   } else {
     intro && intro.remove();
-    heroIn();
+    if (hasGsap && !reduced) heroIn(); else startShow();
   }
 
   /* ---------- Odkrývání při scrollu ---------- */
